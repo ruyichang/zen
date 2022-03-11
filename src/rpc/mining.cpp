@@ -552,8 +552,8 @@ UniValue getblocktemplate(const UniValue& params, bool fHelp)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid mode");
 
     /* for testing, comment this block out if using just one node */
-    if (vNodes.empty())
-        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Horizen is not connected!");
+//     if (vNodes.empty())
+//         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Horizen is not connected!");
 
     if (IsInitialBlockDownload())
         throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Horizen is downloading blocks...");
